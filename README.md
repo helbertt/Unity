@@ -6,6 +6,10 @@
 - [x] Vector3
 - [x] Vector4
 - [ ] Quaternion
+- [ ] Object
+- [ ] Component
+- [ ] GameObject
+
 
 ## Requirements
 
