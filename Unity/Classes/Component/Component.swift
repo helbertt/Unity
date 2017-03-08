@@ -10,41 +10,46 @@ import Foundation
 
 public class Component: Object {
     
-    // MARK: - Variable(s).
+    // MARK: Variable(s).
     
     /** The game object this component is attached to. A component is always attached to a game object. */
-    public var gameObject: GameObject
+    public var gameObject: GameObject = GameObject()
     
     /** The tag of this game object. */
-    public var tag: String
+    public var tag: String = ""
     
     /** The Transform attached to this GameObject. */
     public var transform: Transform {
         return self.gameObject.transform
     }
     
-    // MARK: - Constructor(s).
-    
-    public override init() {
-        self.gameObject = GameObject()
-        self.tag = ""
+    // MARK: Public Function(s).
         
-        super.init()
-    }
-    
-    public init(_ gameObject: GameObject) {
-        self.gameObject = gameObject
-        self.tag = ""
-        super.init()
-    }
-    
-    // MARK: - Public Function(s).
-    
-    func compare(tag: String) -> Bool {
+    public func compare(tag: String) -> Bool {
         return self.tag == tag
     }
     
-    func getComponent<T>() -> T where T: Component {
-        return Component() as! T
+    public func getComponent(type: String) -> Component? {
+        return self.gameObject.getComponent(type: type)
+    }
+    
+    public func getComponents(type: String) -> [Component] {
+        return self.gameObject.getComponents(type: type)
+    }
+    
+    // MARK: Operator(s),
+    
+    /** Compares if two objects refer to a different object. */
+    public static func != (lhs: Component, rhs: Component) -> Bool {
+        return lhs.gameObject != rhs.gameObject ||
+            lhs.tag != rhs.tag ||
+            lhs.transform != rhs.transform
+    }
+    
+    /** Compares two object references to see if they refer to the same object. */
+    public static func == (lhs: Component, rhs: Component) -> Bool {
+        return lhs.gameObject == rhs.gameObject &&
+            lhs.tag == rhs.tag &&
+            lhs.transform == rhs.transform
     }
 }

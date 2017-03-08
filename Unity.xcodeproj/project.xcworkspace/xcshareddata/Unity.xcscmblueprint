@@ -1,30 +1,30 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A240FE490230C81B020BD036CE57693D08B8B2F6",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "3532E073CB6ABD08BEC351ED55FC9EC67ADC1B33",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "A240FE490230C81B020BD036CE57693D08B8B2F6" : 9223372036854775807,
-    "4A4B1DF1FFDF0F80836ADC39BCF425AF660B07C6" : 9223372036854775807
+    "4A4B1DF1FFDF0F80836ADC39BCF425AF660B07C6" : 9223372036854775807,
+    "3532E073CB6ABD08BEC351ED55FC9EC67ADC1B33" : 9223372036854775807
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A3B0D00E-8B23-42DD-8C75-4C7567678BF2",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "A240FE490230C81B020BD036CE57693D08B8B2F6" : "Unity\/",
-    "4A4B1DF1FFDF0F80836ADC39BCF425AF660B07C6" : ""
+    "4A4B1DF1FFDF0F80836ADC39BCF425AF660B07C6" : "",
+    "3532E073CB6ABD08BEC351ED55FC9EC67ADC1B33" : "Unity\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "Unity",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Unity.xcodeproj",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
     {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/helbertt\/Unity.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3532E073CB6ABD08BEC351ED55FC9EC67ADC1B33"
+    },
+    {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/helbertt\/Herr.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4A4B1DF1FFDF0F80836ADC39BCF425AF660B07C6"
-    },
-    {
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/helbertt\/Unity.git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A240FE490230C81B020BD036CE57693D08B8B2F6"
     }
   ]
 }

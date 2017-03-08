@@ -14,18 +14,11 @@ public class Object {
     // MARK: - Variable(s).
     
     /** Should the object be hidden, saved with the scene or modifiable by the user? */
-    var hideFlags: Bool
+    public var hideFlags: HideFlags = HideFlags.None
     
     /** The name of the object. */
-    var name: String
-    
-    // MARK: Constructor(s).
-    
-    public init() {
-        self.hideFlags = false
-        self.name = ""
-    }
-    
+    public var name: String = ""
+        
     // MARK: - Public Function(s).
     
     /** Returns the instance id of the object. */
@@ -37,9 +30,6 @@ public class Object {
     public func toString() -> String {
         return String("Object(\"\(self.name)\")")
     }
-    
-    // MARK: - Static Function(s).
-    
     
     // MARK: - Operator(s).
     

@@ -10,10 +10,13 @@
 		8D3BF1601E6DC193003BC383 /* Unity.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D3BF15E1E6DC193003BC383 /* Unity.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D3BF16A1E6DC1CE003BC383 /* Vector2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3BF1681E6DC1CE003BC383 /* Vector2.swift */; };
 		8D3BF16B1E6DC1CE003BC383 /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3BF1691E6DC1CE003BC383 /* Vector3.swift */; };
+		8DA283E41E6F25DC00EE4754 /* HideFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA283E31E6F25DC00EE4754 /* HideFlags.swift */; };
 		8DB183781E6E0070009BC217 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB183771E6E0070009BC217 /* Object.swift */; };
 		8DB1837C1E6E0490009BC217 /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB1837B1E6E0490009BC217 /* Component.swift */; };
 		8DB1837E1E6E0499009BC217 /* GameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB1837D1E6E0499009BC217 /* GameObject.swift */; };
 		8DB183811E6E058B009BC217 /* Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB183801E6E058B009BC217 /* Transform.swift */; };
+		8DDEA7041E706FD60023FFEA /* MonoBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDEA7031E706FD50023FFEA /* MonoBehaviour.swift */; };
+		8DDEA7071E7070160023FFEA /* Behaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDEA7061E7070160023FFEA /* Behaviour.swift */; };
 		8DE993FB1E6DCE2600B6B602 /* Vector4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE993FA1E6DCE2600B6B602 /* Vector4.swift */; };
 		8DEFEBDE1E6DDD8300580FF6 /* Quaternion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFEBDD1E6DDD8300580FF6 /* Quaternion.swift */; };
 /* End PBXBuildFile section */
@@ -24,13 +27,15 @@
 		8D3BF15F1E6DC193003BC383 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D3BF1681E6DC1CE003BC383 /* Vector2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector2.swift; sourceTree = "<group>"; };
 		8D3BF1691E6DC1CE003BC383 /* Vector3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector3.swift; sourceTree = "<group>"; };
+		8DA283E31E6F25DC00EE4754 /* HideFlags.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HideFlags.swift; sourceTree = "<group>"; };
 		8DB183771E6E0070009BC217 /* Object.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
 		8DB1837B1E6E0490009BC217 /* Component.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
 		8DB1837D1E6E0499009BC217 /* GameObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameObject.swift; sourceTree = "<group>"; };
 		8DB183801E6E058B009BC217 /* Transform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transform.swift; sourceTree = "<group>"; };
+		8DDEA7031E706FD50023FFEA /* MonoBehaviour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonoBehaviour.swift; sourceTree = "<group>"; };
+		8DDEA7061E7070160023FFEA /* Behaviour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Behaviour.swift; sourceTree = "<group>"; };
 		8DE993FA1E6DCE2600B6B602 /* Vector4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector4.swift; sourceTree = "<group>"; };
 		8DEFEBDD1E6DDD8300580FF6 /* Quaternion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quaternion.swift; sourceTree = "<group>"; };
-		8DEFEBDF1E6DE4AB00580FF6 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				8D3BF15F1E6DC193003BC383 /* Info.plist */,
-				8DEFEBDF1E6DE4AB00580FF6 /* MyPlayground.playground */,
 				8D3BF15E1E6DC193003BC383 /* Unity.h */,
 			);
 			path = "Supporting Files";
@@ -82,8 +86,11 @@
 		8D3BF1671E6DC1A7003BC383 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				8DDEA7051E70700C0023FFEA /* Behaviour */,
 				8DB183791E6E047F009BC217 /* Component */,
 				8DB1837A1E6E0485009BC217 /* GameObject */,
+				8DA283E21E6F25CC00EE4754 /* HideFlags */,
+				8DDEA7021E706FC30023FFEA /* MonoBehaviour */,
 				8DB183761E6E0065009BC217 /* Object */,
 				8DEFEBDC1E6DDD6700580FF6 /* Quaternion */,
 				8DB1837F1E6E051B009BC217 /* Transform */,
@@ -102,12 +109,19 @@
 			path = Vector;
 			sourceTree = "<group>";
 		};
+		8DA283E21E6F25CC00EE4754 /* HideFlags */ = {
+			isa = PBXGroup;
+			children = (
+				8DA283E31E6F25DC00EE4754 /* HideFlags.swift */,
+			);
+			path = HideFlags;
+			sourceTree = "<group>";
+		};
 		8DB183761E6E0065009BC217 /* Object */ = {
 			isa = PBXGroup;
 			children = (
 				8DB183771E6E0070009BC217 /* Object.swift */,
 			);
-			name = Object;
 			path = Object;
 			sourceTree = "<group>";
 		};
@@ -116,7 +130,6 @@
 			children = (
 				8DB1837B1E6E0490009BC217 /* Component.swift */,
 			);
-			name = Component;
 			path = Component;
 			sourceTree = "<group>";
 		};
@@ -125,7 +138,6 @@
 			children = (
 				8DB1837D1E6E0499009BC217 /* GameObject.swift */,
 			);
-			name = GameObject;
 			path = GameObject;
 			sourceTree = "<group>";
 		};
@@ -134,8 +146,23 @@
 			children = (
 				8DB183801E6E058B009BC217 /* Transform.swift */,
 			);
-			name = Transform;
 			path = Transform;
+			sourceTree = "<group>";
+		};
+		8DDEA7021E706FC30023FFEA /* MonoBehaviour */ = {
+			isa = PBXGroup;
+			children = (
+				8DDEA7031E706FD50023FFEA /* MonoBehaviour.swift */,
+			);
+			path = MonoBehaviour;
+			sourceTree = "<group>";
+		};
+		8DDEA7051E70700C0023FFEA /* Behaviour */ = {
+			isa = PBXGroup;
+			children = (
+				8DDEA7061E7070160023FFEA /* Behaviour.swift */,
+			);
+			path = Behaviour;
 			sourceTree = "<group>";
 		};
 		8DEFEBDC1E6DDD6700580FF6 /* Quaternion */ = {
@@ -143,7 +170,6 @@
 			children = (
 				8DEFEBDD1E6DDD8300580FF6 /* Quaternion.swift */,
 			);
-			name = Quaternion;
 			path = Quaternion;
 			sourceTree = "<group>";
 		};
@@ -232,9 +258,12 @@
 				8DB1837C1E6E0490009BC217 /* Component.swift in Sources */,
 				8DB1837E1E6E0499009BC217 /* GameObject.swift in Sources */,
 				8D3BF16B1E6DC1CE003BC383 /* Vector3.swift in Sources */,
+				8DDEA7041E706FD60023FFEA /* MonoBehaviour.swift in Sources */,
 				8DEFEBDE1E6DDD8300580FF6 /* Quaternion.swift in Sources */,
+				8DDEA7071E7070160023FFEA /* Behaviour.swift in Sources */,
 				8DE993FB1E6DCE2600B6B602 /* Vector4.swift in Sources */,
 				8DB183811E6E058B009BC217 /* Transform.swift in Sources */,
+				8DA283E41E6F25DC00EE4754 /* HideFlags.swift in Sources */,
 				8D3BF16A1E6DC1CE003BC383 /* Vector2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
