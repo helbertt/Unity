@@ -2,14 +2,14 @@
 
 ## Features
 
+- [x] Component
+- [ ] GameObject
+- [x] HideFlags
+- [x] Object
+- [ ] Quaternion
 - [x] Vector2
 - [x] Vector3
 - [x] Vector4
-- [ ] Quaternion
-- [ ] Object
-- [ ] Component
-- [ ] GameObject
-
 
 ## Requirements
 
