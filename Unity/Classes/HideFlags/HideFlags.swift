@@ -12,15 +12,15 @@ public enum HideFlags: Int {
 
     // MARK: Value(s).
     
-    case None = 0
-    case HideInHierarchy = 1
-    case HideInInspector = 2
-    case DontSaveInEditor = 4
-    case NotEditable = 8
-    case DontSaveInBuild = 16
-    case DontUnloadUnusedAsset = 32
-    case DontSave = 52
-    case HideAndDontSave = 61
+    case none = 0
+    case hideInHierarchy = 1
+    case hideInInspector = 2
+    case dontSaveInEditor = 4
+    case notEditable = 8
+    case dontSaveInBuild = 16
+    case dontUnloadUnusedAsset = 32
+    case dontSave = 52
+    case hideAndDontSave = 61
     
     
     // MARK: - Operator(s).

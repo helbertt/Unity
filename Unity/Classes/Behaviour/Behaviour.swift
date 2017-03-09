@@ -10,7 +10,7 @@ import Foundation
 
 public class Behaviour: Component {
     
-    // MARK: Variable(s).
+    // MARK: - Variable(s).
     
     /** Enabled Behaviours are Updated, disabled Behaviours are not. */
     public var enabled: Bool = true
@@ -18,7 +18,25 @@ public class Behaviour: Component {
     /** Has the Behaviour had enabled called. */
     public var isActiveAndEnabled: Bool = true
     
-    // MARK: Operator(s).
+    // MARK: Inherited Member(s).
+    
+    /**  */
+    public var name: String = ""
+    
+    /**  */
+    public var tag: String = ""
+    
+    /**  */
+    public var hideFlags: HideFlags = .none
+    
+    /**  */
+    public var gameObject: GameObject = GameObject()
+    
+    // MARK: - Constructor(s).
+    
+    public required init() { }
+    
+    // MARK: - Operator(s).
     
     /** Compares if two objects refer to a different object. */
     public static func != (lhs: Behaviour, rhs: Behaviour) -> Bool {

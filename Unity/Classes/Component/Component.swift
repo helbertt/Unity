@@ -8,48 +8,17 @@
 
 import Foundation
 
-public class Component: Object {
+public protocol Component: Object {
     
     // MARK: Variable(s).
     
     /** The game object this component is attached to. A component is always attached to a game object. */
-    public var gameObject: GameObject = GameObject()
+    var gameObject: GameObject { get set }
     
     /** The tag of this game object. */
-    public var tag: String = ""
+    var tag: String { get set }
     
-    /** The Transform attached to this GameObject. */
-    public var transform: Transform {
-        return self.gameObject.transform
-    }
+    // MARK: - Constructor(s).
     
-    // MARK: Public Function(s).
-        
-    public func compare(tag: String) -> Bool {
-        return self.tag == tag
-    }
-    
-    public func getComponent(type: String) -> Component? {
-        return self.gameObject.getComponent(type: type)
-    }
-    
-    public func getComponents(type: String) -> [Component] {
-        return self.gameObject.getComponents(type: type)
-    }
-    
-    // MARK: Operator(s),
-    
-    /** Compares if two objects refer to a different object. */
-    public static func != (lhs: Component, rhs: Component) -> Bool {
-        return lhs.gameObject != rhs.gameObject ||
-            lhs.tag != rhs.tag ||
-            lhs.transform != rhs.transform
-    }
-    
-    /** Compares two object references to see if they refer to the same object. */
-    public static func == (lhs: Component, rhs: Component) -> Bool {
-        return lhs.gameObject == rhs.gameObject &&
-            lhs.tag == rhs.tag &&
-            lhs.transform == rhs.transform
-    }
+    init()
 }

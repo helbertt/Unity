@@ -9,7 +9,7 @@
 import Foundation
 
 /** Base class for all entities. */
-public class GameObject: Object {
+public class GameObject: Component {
     
     // MARK: - Public Variable(s).
     
@@ -19,13 +19,7 @@ public class GameObject: Object {
     /** Editor only API that specifies if a game object is static. */
     public var isStatic: Bool = false
     
-    /** The tag of this game object. */
-    public var tag: String = ""
-    
-    /** The Transform attached to this GameObject. */
-    public let transform: Transform = Transform()
-    
-    // MARK: - Public Variable(s).
+    // MARK: - Private Variable(s).
     
     /** The components attached to this GameObject. */
     fileprivate var components: [Component] = [Component]()
@@ -33,24 +27,38 @@ public class GameObject: Object {
     /** The gameObjets in scene. */
     fileprivate static var gameObjects: [GameObject] = [GameObject]()
     
-    // MARK: - Constructor(s).
+    // MARK: - Inherited Member(s).
     
-    /** Creates a new game object. */
-    public override init() {
-        super.init()
-    }
+    /**  */
+    public var tag: String = ""
+    
+    /**  */
+    public var gameObject: GameObject = GameObject()
+    
+    /**  */
+    public var name: String = ""
+    
+    /**  */
+    public var hideFlags: HideFlags = .none
+    
+    
+    // MARK: - Constructor(s).
     
     /** Creates a new game object, named name. */
     public init(name: String) {
-        super.init()
         self.name = name
     }
+    
+    public required init() { }
     
     // MARK: Public Function(s)
     
     /** Adds a component class named className to the game object. */
-    public func add(component: Component) {
-        self.components.append(component)
+    public func addComponent<T>(component: T.Type) -> T where T:Component {
+        let c = component.init()
+        self.components.append(c)
+        
+        return c
     }
         
     /** Is this game object tagged with tag ? */
@@ -59,10 +67,10 @@ public class GameObject: Object {
     }
     
     /** Returns the component of Type type if the game object has one attached, null if it doesn't. */
-    public func getComponent(type: String) -> Component? {
-        for component in self.components {
-            if type == String(describing: type(of: component.self)) {
-                return component
+    public func getComponent<T>(component: T.Type) -> T? where T:Component {
+        for i in self.components {
+            if i is T {
+                return component as? T
             }
         }
         
