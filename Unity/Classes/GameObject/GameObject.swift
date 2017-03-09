@@ -78,11 +78,11 @@ public class GameObject: Component {
     }
     
     /** Returns all components of Type type in the GameObject. */
-    public func getComponents(type: String) -> [Component] {
-        var result = [Component]()
-        for component in self.components {
-            if type == String(describing: type(of: component.self)) {
-                result.append(component)
+    public func getComponents<T>(component: T.Type) -> [T] where T:Component {
+        var result: [T] = []
+        for i in self.components {
+            if i is T {
+                result.append(i as! Component)
             }
         }
         return result

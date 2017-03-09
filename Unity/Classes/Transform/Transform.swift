@@ -14,13 +14,13 @@ public struct Transform {
     // MARK: Variabl(e).
     
     /** The position of the transform in world space. */
-    let position: Vector3
+    public var position: Vector3
     
     /** The scale of the transform relative to the parent. */
-    let scale: Vector3
+    public var scale: Vector3
     
     /** The rotation of the transform in world space stored as a Quaternion. */
-    let rotation: Vector3
+    public var rotation: Vector3
     
     // MARK: Constructor(s).
     
